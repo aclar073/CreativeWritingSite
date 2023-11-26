@@ -53,7 +53,7 @@ ul {
   }
   .current
   {
-    color:lavendar;
+    color:#84549c;
   }
   main
   {
@@ -75,7 +75,7 @@ ul {
   {
     float:right;
     width:29%;
-    background-color:lavendar;
+    background-color:#84549c;
     padding: 10px;
     min-height: 500px;
   }
@@ -129,7 +129,7 @@ figcaption {
   }
   
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: lavendar;
+    background-color: #84549c;
     color:white;
   }
   
