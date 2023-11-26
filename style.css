@@ -1,20 +1,15 @@
-header, section, footer, aside, nav, article, figure, figcaption {
-    display: block;}
-body {
-    color: #666666;
-    background-color: #f9f8f6;
-    background-position: center;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.4em;
-    margin: 0px;}
-.wrapper {
-    width: 940px;
-    margin: 20px auto 20px auto;
-    border: 2px solid #000000;
-    background-color: #ffffff;}
+body
+{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #111;
+}
 header {
     height: 160px;
-    background-image: url("pen.jpg");}
+    background-image:url("notebook.jpg"), linear-gradient(to left,#111, white);  
+    background-repeat: no-repeat;
+    background-color:#111;
+    width:100%; 
+}
 h1 {
     
     
@@ -22,37 +17,71 @@ h1 {
     margin: 0px;
     padding-top: 10px;
     text-align: right;
+    text-shadow:#111 2px;
     padding-right: 10px;
     color: white;
 }
-nav, footer {
-    clear: both;
-    color: #ffffff;
-    background-color: #aeaca8;
-    height: 30px;}
-nav ul {
-    margin: 0px;
-    padding: 5px 0px 5px 30px;}
-nav li {
-    display: inline;
-    margin-right: 40px;}
-nav li a {
-    color: #ffffff;}
-nav li a:hover, nav li a.current {
-    color: #000000;}
-section.courses {
-    float: left;
-    width: 659px;
-    border-right: 1px solid #eeeeee;}
-article {
-    clear: both;
-    overflow: auto;
-    width: 100%;
-    background-image: url("paper.jpg");
+.navbar
+{
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
 }
-hgroup {
-    margin-top: 40px;}
-figure img
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .current
+  {
+    color:orange;
+  }
+  main
+  {
+    padding-top:180px;
+    margin-top:50px;
+  }
+  article
+  {
+    background-image: url("paper.jpg");
+    padding: 15px;
+    width: 66%;
+    float:left;
+  }
+  .title
+  {
+    text-align:center;
+  }
+  aside
+  {
+    float:right;
+    width:29%;
+    background-color:orange;
+    padding: 10px;
+    min-height: 500px;
+  }
+  
+  figure img
 {
     height: 220px;
     width:290px;
@@ -68,31 +97,73 @@ figure {
 figcaption {
     font-size: 90%;
     text-align: left;}
-aside {
-    width: 230px;
+
+  footer
+  {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#333;
+    color: white;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
     float: left;
-    padding: 0px 0px 0px 20px;}
-aside section a {
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: orange;
+    color:white;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-    padding: 10px;
-    border-bottom: 1px solid #eeeeee;}
-aside section a:hover {
-    color: #985d6a;
-    background-color: #efefef;}
-a {
-    color: #de6581;
-    text-decoration: none;}
-h1, h2, h3 {
-    font-weight: normal;}
-h2 {
-    margin: 10px 0px 5px 0px;
-    padding: 0px;}
-h3 {
-    margin: 0px 0px 10px 0px;
-    color: #de6581;}
-aside h2 {
-    padding: 30px 0px 10px 0px;
-    color: #de6581;}
-footer {
-    font-size: 80%;
-    padding: 7px 0px 0px 20px;}
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .top{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 15px;
+  }
